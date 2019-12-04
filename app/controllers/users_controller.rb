@@ -9,7 +9,7 @@ class UsersController < ApplicationController
         render json: user
     end
     def create
-        user = User.new(username: params[:username])
+        user = User.new(username: params[:username], wins: 0)
         user.save
         render json: user
     end
