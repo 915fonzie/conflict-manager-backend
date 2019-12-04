@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2019_12_02_205411) do
 
   create_table "characters", force: :cascade do |t|
     t.string "name"
+    t.string "description"
+    t.boolean "dodgeFlag"
     t.integer "attack"
     t.integer "defense"
     t.integer "agility"
