@@ -12,7 +12,7 @@ class Character < ApplicationRecord
         damage_taken = 0
         dodge_roll = rand((self.agility + ((self.dodgeFlag && 1 || 0) * DODGE_ACTIVATE_VALUE)) .. DODGE_RANGE_UPPER)
         if !dodge_roll.between?(DODGE_RANGE_LOWER, DODGE_RANGE_UPPER)
-            damage_taken = (damage * (self.defense / 100.0)).to_i
+            damage_taken = damage - (damage * (self.defense / 100.0)).to_i
             self.health -= damage_taken
             self.dodgeFlag = false;
             self.save
