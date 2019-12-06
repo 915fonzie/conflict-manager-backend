@@ -10,9 +10,8 @@ class CreateCharacters < ActiveRecord::Migration[6.0]
       t.integer :health
       t.string :icon_img
       t.string :idle_gif
-      t.string :attack1_gif
-      t.string :attack2_gif
       t.string :defeated_gif
+      t.string :icon_audio_url
       t.integer :wins_required
 
       t.timestamps

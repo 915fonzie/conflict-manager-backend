@@ -34,9 +34,8 @@ ActiveRecord::Schema.define(version: 2019_12_02_205411) do
     t.integer "health"
     t.string "icon_img"
     t.string "idle_gif"
-    t.string "attack1_gif"
-    t.string "attack2_gif"
     t.string "defeated_gif"
+    t.string "icon_audio_url"
     t.integer "wins_required"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

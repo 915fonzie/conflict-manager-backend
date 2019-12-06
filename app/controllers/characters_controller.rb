@@ -18,9 +18,11 @@ class CharactersController < ApplicationController
         defender.save
         render json: 
         {
+            attacker_defeated_gif: attacker.defeated_gif,
             defender_health: defender.health,
             defender_id: defender.id,
-            damage_dealt: damage_taken
+            damage_dealt: damage_taken,
+            defender_defeated_gif: defender.defeated_gif 
         }
     end
     def random_enemy
