@@ -80,6 +80,11 @@ if you have any questions about the project feel free to message me.
 - Run `rails db:seed` in console to seed the data
 - Run `rails server or rails s` to start the server on a localhost
 
+## If you wish to conribute to the project you may do so by following the proceeding steps:
+- Follow steps one and two of the Install Instructions section.
+- Create your own branch to work on.
+- Follow standard Ruby convention in your code.
+- Submit any changes you've made to your branch as a pull request on the master to be reviewed.
 
 ## Copyright Information:
 
