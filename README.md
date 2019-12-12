@@ -70,10 +70,20 @@ if you have any questions about the project feel free to message me.
 - as a user, I should be able to continue fighting as many times as I'd like
 - as a user, I should be able to unlock more characters depending on how many times I win
 
+## Installation Guide:
+**NOTE:** Make sure that you already have rails and postgresql installed
+- Fork and clone this repository
+- Open the repository in your IDE of choice
+- Run `bundle install` in console to insure you have all the required gems
+- Run `rails db:create` to create the Postgres Database
+- Run `rails db:migrate` in console to create the schema
+- Run `rails db:seed` in console to seed the data
+- Run `rails server or rails s` to start the server on a localhost
+
 
 ## Copyright Information:
 
-**Copyright 2019 Alfonso Pruneda and Shawn Huang Fernandes**
+**Copyright 2019, Alfonso Pruneda and Shawn Huang Fernandes**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
